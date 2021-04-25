@@ -1,1 +1,33 @@
 @charset "UTF-8";
+
+.header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+}
+.mb-dp-none {
+  display: none;
+}
+
+.pc-dp-none {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mb-dp-none {
+    display: block;
+  }
+  .pc-dp-none {
+    display: none;
+  }
+
+  h1 {
+    color: blue;
+  }
+}

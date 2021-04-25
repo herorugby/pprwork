@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>枚方市で海鮮と酒を楽しむディナーは『火のや温〜ひのやおん〜』で</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
     <link rel="stylesheet" href="stylesheets/index.css">
 </head>
 
-<body>
+<body class="drawer drawer--top">
 
     <!-- start:#wrap -->
     <div id="wrap">
@@ -21,38 +25,48 @@
         <!-- start:#drawer-menu -->
         <div id="drawer-menu" class="pc-dp-none">
             <button type="button" class="drawer-toggle drawer-hamburger">
+                <!-- <span class="sr-only">toggle navigation</span> -->
                 <span class="drawer-hamburger-icon"></span>
             </button>
-            <nav id="" class="humburger">
-                <p>ご予約・お問い合わせ</p>
-                <p>tel.<span>072-844-0051</span></p>
-                <ul>
-                    <li>ホーム<br>Home</li>
-                    <li>楽しみ方<br>How to use</li>
-                    <li>お品書き<br>Menu</li>
-                    <li>お飲み物<br>Drink</li>
-                    <li>空間<br>Seat</li>
-                    <li>求人<br>Recruit</li>
+            <nav id="" class="drawer-nav" role="navigation">
+                <a href="">
+                    <img src="" alt="ご予約お問い合わせは072-844-0051">
+                </a>
+                <ul class="drawer-menu">
+                    <li><a href="">ホーム<br>Home</a></li>
+                    <li><a href="">楽しみ方<br>How to use</a></li>
+                    <li><a href="">お品書き<br>Menu</a></li>
+                    <li><a href="">お飲み物<br>Drink</a></li>
+                    <li><a href="">空間<br>Seat</a></li>
+                    <li><a href="">求人<br>Recruit</a></li>
                 </ul>
             </nav>
         </div>
         <!-- end:#drawer-menu -->
 
         <!-- header start -->
-        <header>
+        <header id="header" class="eyecatch-area header width-100">
+            <figure>
+                <img src="images/img-eyecatch-mb.jpg" alt="">
+            </figure>
             <h1>枚方で厳選酒、旬の料理の記念日・<br>
             宴会なら「火のや(ひのやおん)」へ
             </h1>
-            <div>
-                <img src="" alt="火のや温">
-                <section>
-                    <div class="onlypc">
+            <section>
+                <h2 class="eyecatch-icon">
+                    <a href="#">
+                        <figure>
+                            <img src="images/img-logo-mb.png" alt="火のや温">
+                        </figure>
+                    </a>
+                </h2>
+                <div>
+                    <div class="mb-dp-none">
                         <p>ご予約・お問い合わせ</p>
                         <p>tel.<span>072-844-0051</span></p>
                     </div>
-                    <h2>楽しみ方<br>How to use</h2>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <div>
                 <div>
@@ -69,16 +83,16 @@
                 <p>web予約はこちら</p>
             </div>
 
-            <nav class="onlypc">
+            <nav class="mb-dp-none">
                 <p>ご予約・お問い合わせ</p>
                 <p>tel.<span>072-844-0051</span></p>
                 <ul>
-                    <li>ホーム<br>Home</li>
-                    <li>楽しみ方<br>How to use</li>
-                    <li>お品書き<br>Menu</li>
-                    <li>お飲み物<br>Drink</li>
-                    <li>空間<br>Seat</li>
-                    <li>求人<br>Recruit</li>
+                    <li><a href="">ホーム<br>Home</a></li>
+                    <li><a href="">楽しみ方<br>How to use</a></li>
+                    <li><a href="">お品書き<br>Menu</a></li>
+                    <li><a href="">お飲み物<br>Drink</a></li>
+                    <li><a href="">空間<br>Seat</a></li>
+                    <li><a href="">求人<br>Recruit</a></li>
                 </ul>
             </nav>
         </header>
@@ -98,9 +112,9 @@
 
             <div>
                 <section>
-                    <h3>
-                    <img src="" alt="居酒屋の枠を超えて「おいしい」を新体験">
-                </h3>
+                    <h4>
+                        <img src="" alt="居酒屋の枠を超えて「おいしい」を新体験">
+                    </h4>
                     <div>
                         <p>
                         今日、一番の美味しさに出会って、一日<br>
@@ -132,7 +146,7 @@
 
             <div>
                 <section>
-                    <h4><span>01</span>.旬と珍味を味わう</h4>
+                    <h5><span>01</span>.旬と珍味を味わう</h5>
                     <p>
                     その時一番の旬の味を楽しむ一皿をご提<br>
                     供。お通しで日替わりの珍味を味わえる<br>
@@ -143,7 +157,7 @@
 
             <div>
                 <section>
-                    <h4><span>02</span>.酒と肴の<br>上質マリアージュ</h4>
+                    <h5><span>02</span>.酒と肴の<br>上質マリアージュ</h5>
                     <p>
                     本当に相性のよいお酒と料理は、美<br>
                     味しさに相乗効果をもたらします。<br>
@@ -158,7 +172,7 @@
 
             <div>
                 <section>
-                    <h4><span>03</span>.お集まりに、<br>みんなでごゆるりと</h4>
+                    <h5><span>03</span>.お集まりに、<br>みんなでごゆるりと</h5>
                     <p>
                     みんなで楽しく宵の宴を。ご宴会はもち<br>
                     ろん、記念日などのディナーにもおすす<br>
@@ -169,9 +183,9 @@
 
             <div>
                 <section>
-                    <h3>
+                    <h4>
                     <img src="" alt="美味しさは一期一会火のや温のこだわり">
-                </h3>
+                </h4>
                     <p>
                     良いものを仕入れることはその素材が一<br>
                     番生きる料理をご提供したい。そんな想<br>
@@ -190,9 +204,9 @@
 
             <div>
                 <section>
-                    <h3><span>最大値</span>を<span>常</span>に<span>アップデート</span><br>
+                    <h4><span>最大値</span>を<span>常</span>に<span>アップデート</span><br>
                     <span>進化</span>する<span>お店</span>づくりを<span>目指</span>して
-                </h3>
+                </h4>
                     <p>
                     「<span>むずかしいことはしなくていい。</span><br>
                     <span>今日の出会いとどう向き合うか。</span>」
@@ -233,11 +247,11 @@
             <div>
                 <section>
                     <p>＼食材＋調理をこだわってます！／</p>
-                    <h3>
+                    <h4>
                     <span>異食</span>の<span>未体験</span>を<span>楽</span>しむ<br>
                     <span>火</span>のや<span>温</span>の<br>
                     <span>う</span>ま<span>い</span>も<span>ん</span><span>講座</span>
-                </h3>
+                </h4>
                     <p>
                     どんなに高級な食材であろうとも、その<br>
                     時々の状態にあわせた、切り方・火の入<br>
@@ -249,7 +263,7 @@
                 </section>
                 <div>
                     <section>
-                        <h4>01：きのこの話「七輪ピック」</h4>
+                        <h5>01：きのこの話「七輪ピック」</h5>
                         <div>
                             <p>
                             例えば、きのこ。<br>
@@ -267,7 +281,7 @@
                         </div>
                     </section>
                     <section>
-                        <h4>02：なすの話「とろなす」「わりなす」</h4>
+                        <h5>02：なすの話「とろなす」「わりなす」</h5>
                         <div>
                             <p>
                             例えば、なす<br>
@@ -287,7 +301,7 @@
                         </div>
                     </section>
                     <section>
-                        <h4>03：ホルモンの話「和牛ハツの刺身」</h4>
+                        <h5>03：ホルモンの話「和牛ハツの刺身」</h5>
                         <div>
                             <p>
                             ホルモンを刺身で食べたことはあります<br>
@@ -310,7 +324,7 @@
                         </div>
                     </section>
                     <section>
-                        <h4>04：海鮮の話「はちびき、<br>おじさん、沖ボラ」etc</h4>
+                        <h5>04：海鮮の話「はちびき、<br>おじさん、沖ボラ」etc</h5>
                         <div>
                             <p>
                             鮮魚は全国で唯一全漁法が許されてい<br>
@@ -334,7 +348,7 @@
 
             <div>
                 <section>
-                    <h3>食のいろいろな楽しみ方を<br>体験してみてください。</h3>
+                    <h4>食のいろいろな楽しみ方を<br>体験してみてください。</h4>
                     <div>
                         <p>
                         食材の状態、調理法、調味料。<br>
@@ -359,7 +373,7 @@
         <!-- main end -->
 
         <!-- footer start -->
-        <footer>
+        <footer id="footer">
             <nav>
                 <ul>
                     <li>ホーム<br>Home</li>
@@ -406,6 +420,10 @@
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
     <script src="main.js"></script>
 </body>
 
