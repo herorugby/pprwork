@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.header {
+.l-header {
   width: 100%;
 }
 
@@ -11,18 +11,39 @@ main {
 .footer {
   width: 100%;
 }
+
 .mb-dp-none {
   display: none;
 }
 
-.pc-dp-none {
-  display: block;
+.flex-container {
+  display: flex;
+}
+
+.flex-container-sep {
+  justify-content: space-between;
+}
+
+.icon-tel,
+.icon-reserve {
+  position: fixed;
+}
+
+.icon-tel {
+  bottom: 0;
+  left: 0;
+}
+
+.icon-reserve {
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 768px) {
   .mb-dp-none {
     display: block;
   }
+
   .pc-dp-none {
     display: none;
   }
