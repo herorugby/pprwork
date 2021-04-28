@@ -1,4 +1,19 @@
 @charset "UTF-8";
 
+.swiper-container .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  background: #fff;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #e59a0a;
+}
+
 @media screen and (min-width: 768px) {
 }

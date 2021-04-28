@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
+/* header start */
 .l-header {
   width: 100%;
 }
+/* header end */
 
+/* main start */
 main {
-  width: 100%;
-}
-
-.footer {
   width: 100%;
 }
 
@@ -38,6 +37,16 @@ main {
   bottom: 0;
   right: 0;
 }
+/* main end */
+
+/* footer start */
+.l-footer {
+  width: 100%;
+  color: #fff;
+  padding-bottom: 70px;
+}
+
+/* footer end */
 
 @media screen and (min-width: 768px) {
   .mb-dp-none {
