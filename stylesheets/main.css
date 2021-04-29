@@ -1,5 +1,153 @@
 @charset "UTF-8";
 
+/* from wrap-background */
+.wrap-background {
+  width: 100%;
+  position: relative;
+  background-image: url(../images/mb-img-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.concept-bg-icon {
+  position: absolute;
+}
+
+.alcohol-icon {
+  width: 100px;
+  top: 5%;
+  left: 0;
+}
+
+.vegetables-icon {
+  width: 150px;
+  top: 0;
+  right: 0;
+}
+/* to introduce02 */
+
+/* breadcrumb start */
+.breadcrumb {
+  padding: 2% 0 0 3%;
+}
+/* breadcrumb end */
+
+/* concept start */
+.concept-title {
+  width: 95%;
+  margin: 10% auto 0;
+}
+
+.concept-description {
+  width: 85%;
+  margin: 10% auto 0;
+  font-size: 1.6rem;
+}
+
+.concept-description p {
+  line-height: 1.875;
+}
+
+.more-btn {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.more-btn figure img {
+  vertical-align: top;
+}
+/* concept end */
+
+/* introduce start */
+.introduce-box01,
+.introduce-box02,
+.introduce-box03 {
+  position: relative;
+}
+
+.absolute-btm {
+  position: absolute;
+  bottom: 10%;
+}
+
+.introduce-title {
+  margin-bottom: 8%;
+  font-size: 24px;
+}
+
+.introduce-title::before {
+  position: absolute;
+  content: "";
+  top: -2.1em;
+  left: 0;
+  height: 34%;
+  width: 29%;
+  background: url(../images/img-title-before-slash.png);
+  background-repeat: no-repeat;
+}
+
+.f-size {
+  font-size: 40px;
+}
+
+.introduce-description {
+  font-size: 1.6rem;
+  line-height: 1.875;
+}
+
+/* 幅85%にする */
+.padding-75 {
+  padding: 0 7.5%;
+}
+
+.box02-images {
+  position: relative;
+}
+
+.img-introduce02 {
+  width: 65%;
+  margin-left: 7.5%;
+}
+
+.img-introduce03 {
+  position: absolute;
+  right: 7.5%;
+  top: -8%;
+  width: 200px;
+  height: 200px;
+}
+/* introduce end */
+
+/* swiper start */
+.swiper-container {
+  width: 90%;
+  margin: 5% auto;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide {
+  padding: 5% 0 10% 0;
+}
+
+.contents-title {
+  padding: 0 5% 0;
+}
+
+.contents {
+  padding: 5% 5% 0;
+}
+
+.contents p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.contents figure {
+  width: 70%;
+  margin: 10% auto 0;
+}
+
 .swiper-container .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
@@ -14,6 +162,7 @@
   color: #fff;
   background: #e59a0a;
 }
+/* swiper end */
 
 @media screen and (min-width: 768px) {
 }

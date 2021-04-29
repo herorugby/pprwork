@@ -63,16 +63,10 @@ h1 {
   height: auto;
 }
 
-.concept-top {
+/* .concept-top {
   width: 90%;
   margin: 0 auto;
-}
-
-.concept-description {
-  width: 85%;
-  margin: 0 auto;
-  font-size: 1.8rem;
-}
+} */
 
 @media screen and (min-width: 768px) {
   h1 {

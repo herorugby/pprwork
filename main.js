@@ -20,3 +20,21 @@ let swiper = new Swiper('.swiper-container', {
         },
     },
 });
+
+// more description
+$(document).ready(function () {
+    $('.more').show();
+    $('.close').hide();
+
+    $('.more').on('click', function () {
+        $(this).hide();
+        $('.close').show();
+        $('.more-description').slideToggle(500);
+    });
+
+    $('.close').on('click', function () {
+        $(this).hide();
+        $('.more').show();
+        $('.more-description').slideToggle(500);
+    });
+});

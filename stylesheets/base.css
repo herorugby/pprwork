@@ -37,6 +37,15 @@ main {
   bottom: 0;
   right: 0;
 }
+
+.u-red {
+  color: #a52a2a;
+}
+
+.u-orange {
+  color: #d88900;
+}
+
 /* main end */
 
 /* footer start */
