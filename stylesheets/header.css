@@ -50,26 +50,20 @@ h1 {
 
 .eyecatch-theme {
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 50%;
+  margin-right: -50%;
   transform: translate(-50%, -50%);
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; */
   width: 80%;
-  margin: 0 auto;
 }
-
-.eyecatch-area > figure > img {
-  /* object-fit: contain; */
-  width: 100%;
-  height: auto;
-}
-
-/* .concept-top {
-  width: 90%;
-  margin: 0 auto;
-} */
 
 @media screen and (min-width: 768px) {
   h1 {
-    color: blue;
+    color: #fff;
   }
 }

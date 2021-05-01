@@ -52,15 +52,18 @@
 
         <!-- header start -->
         <header id="header" class="l-header eyecatch-area">
-            <figure>
-                <img src="images/img-eyecatch-mb.jpg" alt="">
-            </figure>
-            <h1>枚方で厳選酒、旬の料理の記念日・<br>
+
+            <h1>枚方で厳選酒、旬の料理の記念日・<br class="pc-dp-none">
                 宴会なら「火のや(ひのやおん)」へ
             </h1>
+
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/img-eyecatch-pc.jpg">
+                <img src="images/img-eyecatch-mb.jpg" alt="トップ背景">
+            </picture>
             <section>
-                <h2 class="eyecatch-icon eyecatch-theme">
-                    <a href="#">
+                <h2 class="eyecatch-icon">
+                    <a href="#" class="eyecatch-theme">
                         <figure>
                             <img src="images/img-logo-mb.png" alt="火のや温">
                         </figure>
@@ -99,6 +102,7 @@
                     <li><a href="#">求人<br>Recruit</a></li>
                 </ul>
             </nav>
+
         </header>
         <!-- header end -->
 
@@ -191,9 +195,9 @@
                     <div class="absolute-box padding-75">
                         <p class="introduce-title"><span class="u-orange f-size">01</span><span class="f-size">.</span>旬と珍味を味わう</p>
                         <p class="introduce-description">
-                        その時一番の旬の味を楽しむ一皿をご提供。<br class="mb-dp-none">
-                        お通しで日替わりの珍味を味わえるのも火<br class="mb-dp-none">
-                        のや温の楽しさのひとつです。
+                            その時一番の旬の味を楽しむ一皿をご提供。<br class="mb-dp-none">
+                            お通しで日替わりの珍味を味わえるのも火<br class="mb-dp-none">
+                            のや温の楽しさのひとつです。
                         </p>
                     </div>
                 </div>
@@ -210,9 +214,9 @@
                     <div class="absolute-box padding-75">
                         <p class="introduce-title"><span class="u-orange f-size">02</span><span class="f-size">.</span>酒と肴の<br>上質マリアージュ</p>
                         <p class="introduce-description after-relative">
-                        本当に相性のよいお酒と料理は、美味しさに相乗効果をもたらします。
-                        種類豊富な日本酒に、甘いフルーツを使ったカクテル、個性の強い本格焼酎まで。
-                        酒と肴の組み合わせを楽しんでお気に入りのマリアージュを見つけてみてください。
+                            本当に相性のよいお酒と料理は、美味しさに相乗効果をもたらします。
+                            種類豊富な日本酒に、甘いフルーツを使ったカクテル、個性の強い本格焼酎まで。
+                            酒と肴の組み合わせを楽しんでお気に入りのマリアージュを見つけてみてください。
                         </p>
                     </div>
                 </div>
@@ -230,7 +234,7 @@
             <!-- wrap02 start -->
             <!-- パララックス start -->
             <div class="wrap02">
-                <div class="introduce-box03">
+                <div class="introduce-box03 padding-75 padding-top">
                     <p><span class="u-orange f-size">03</span><span class="f-size">.</span>お集まりに、<br>みんなでごゆるりと</p>
                     <p>
                         みんなで楽しく宵の宴を。ご宴会はもちろん、<br class="mb-dp-none">
@@ -243,95 +247,113 @@
             <!-- wrap03 start -->
             <div class="wrap03">
                 <section>
-                    <h4>
+                    <h4 class="mb-img-concept-02">
                         <img src="images/mb-img-concept-02.png" alt="美味しさは一期一会火のや温のこだわり">
                     </h4>
-                    <p>
-                        良いものを仕入れることはその素材が一番生きる料理<br class="mb-dp-none">
-                        をご提供したい。そんな想いから、火のや温では毎日<br class="mb-dp-none">
-                        調理法を考案、いちばん美味しい方法でお召し上がり<br class="mb-dp-none">
-                        いただいています。豆腐、梅干し１つにしてもその食<br class="mb-dp-none">
-                        材のために仕入れ先を変え、本当においしいと思った<br class="mb-dp-none">
-                        ものを提供する。それが温のこだわりです。
-                    </p>
+                    <div class="concept-description padding-75">
+                        <p>
+                            良いものを仕入れることはその素材が一番生きる料理<br class="mb-dp-none">
+                            をご提供したい。そんな想いから、火のや温では毎日<br class="mb-dp-none">
+                            調理法を考案、いちばん美味しい方法でお召し上がり<br class="mb-dp-none">
+                            いただいています。豆腐、梅干し１つにしてもその食<br class="mb-dp-none">
+                            材のために仕入れ先を変え、本当においしいと思った<br class="mb-dp-none">
+                            ものを提供する。それが温のこだわりです。
+                        </p>
+                    </div>
                 </section>
-                <div>
+                <figure class="img-introduce04">
                     <img src="images/img-introduce04.png" alt="新鮮食材">
-                </div>
+                </figure>
+                <figure class="img-wrap03-bg-illust">
+                    <img src="images/img-wrap03-bg-illust.png" alt="新鮮食材">
+                </figure>
             </div>
             <!-- wrap03 end -->
 
             <!-- wrap04 start -->
             <div class="wrap04">
                 <section>
-                    <h4 class="u-orange"><span>最大値</span>を<span>常</span>に<span>アップデート</span><br>
-                        <span>進化</span>する<span>お店</span>づくりを<span>目指</span>して
+                    <h4 class="u-orange wrap04-title">
+                        最大値<span class="f-size24">を常に</span>アップデート<br>
+                        進化<span class="f-size24">するお</span>店<span class="f-size24">づくりを</span>目指<span class="f-size24">して</span>
                     </h4>
-                    <p>
-                        「<span>むずかしいことはしなくていい。</span><br>
-                        <span>今日の出会いとどう向き合うか。</span>」
-                    </p>
-                    <p>
-                        &ensp;火のや温の料理に「定番」はありません。
-                        食材との出会いは人との出会いと一緒。
-                        トマトや魚１つにしても出会ったその日によって状態は違います。
-                        今日この食材を最も活かせるのはどんな食べ方か。
-                        そんなことを考え対話しながら毎日メニューを考えています。
-                    </p>
+                    <div class="title-underline"></div>
+                    <div class="concept-description padding-75 wrap04-description">
+                        <p class="txt-left">
+                            「<span class="u-line-red">むずかしいことはしなくていい｡</span>
+                        </p>
+                        <p class="txt-right">
+                            <span class="u-line-red">今日の出会いとどう向き合うか｡</span>」
+                        </p>
+                        <p>
+                            &ensp;火のや温の料理に「定番」はありません。
+                            食材との出会いは人との出会いと一緒。
+                            トマトや魚１つにしても出会ったその日によって状態は違います。
+                            今日この食材を最も活かせるのはどんな食べ方か。
+                            そんなことを考え対話しながら毎日メニューを考えています。
+                        </p>
+                    </div>
+
                 </section>
-                <div>
-                    <p>
-                        <span class="u-orange">365</span>日<span class="u-orange">24</span>時間、<br>
-                        おいしいを研究！
-                    </p>
-                    <figure>
-                        <img src="images/mb-img-owner.jpg" alt="オーナー永田尚人">
-                        <figcaption>オーナー兼シェフ<br>永田 尚人</figcaption>
-                    </figure>
+                <div class="owner-introduce">
+                    <div class="owner-catch">
+                        <p class="txt-left">
+                            <span class="u-orange">365</span>日<span class="u-orange">24</span>時間、
+                        </p>
+                        <p class="txt-right">
+                            おいしいを研究！
+                        </p>
+                    </div>
+                    <div class="flex-container">
+                        <figure class="owner-img">
+                            <img src="images/mb-img-owner.jpg" alt="オーナー永田尚人">
+                            <figcaption><span class="f-size20">オーナー兼シェフ</span><br><span class="f-size25">永田 尚人</span></figcaption>
+                        </figure>
+                        <figure class="lamp">
+                            <img src="images/img-lamp.png" alt="ちょうちん">
+                        </figure>
+                    </div>
+
                 </div>
             </div>
             <!-- wrap04 end -->
 
             <!-- wrap05 start -->
             <div class="wrap05">
-                <p>
+                <p class="owner-comments padding-75">
                     &ensp;生産者の意図を汲み取り、つなげる料理人としてお客様に美味しい以上の喜びを
                     伝えられるように昨日も今日も、そして明日からも。<br class="mb-dp-none">
                     居酒屋の限界点を超える挑戦を日々繰り返し「進化する」お店づくりを目指してまいります。
                 </p>
-                <img src="images/img-introduce05.png" alt="食材">
+                <figure class="img-introduce05">
+                    <img src="images/img-introduce05.png" alt="食材">
+                </figure>
+                <figure class="wrap05-bg">
+                    <img src="images/mb-img-wrap05-bg.png" alt="包丁と座席">
+                </figure>
             </div>
             <!-- wrap05 end -->
 
             <!-- wrap06 start -->
             <div class="wrap06">
-                <section>
-                    <p>＼食材＋調理をこだわってます！／</p>
-                    <h4>
-                        <span class="u-orange">異食</span>
-                        <span class="u-red">の</span>
-                        <span class="u-orange">未体験</span>
-                        <span class="u-red">を</span>
-                        <span class="u-red">楽</span>
-                        <span class="u-red">しむ</span><br>
-                        <span class="u-red">火</span>
-                        <span class="u-red">のや</span>
-                        <span class="u-red">温</span>
-                        <span class="u-red">の</span><br>
-                        <span class="u-orange">う</span>
-                        <span class="u-orange">ま</span>
-                        <span class="u-orange">い</span>
-                        <span class="u-orange">も</span>
-                        <span class="u-orange">ん</span>
-                        <span class="u-red">講座</span>
+                <section class="wrap06-top-block padding-75">
+                    <p class="wrap06-catch f-size18">＼食材＋調理をこだわってます！／</p>
+                    <h4 class="wrap06-title f-size35">
+                        <span class="u-orange">異食</span><span class="u-red">の</span><span class="u-orange">未体験</span><span class="u-red">を</span><span class="u-red">楽</span><span class="u-red">しむ</span><br>
+                        <span class="u-red">火</span><span class="u-red">のや</span><span class="u-red">温</span><span class="u-red">の</span><br>
+                        <span class="u-orange up">う</span><span class="u-orange">ま</span><span class="u-orange up">い</span><span class="u-orange">も</span><span class="u-orange up">ん</span><span class="u-red">講座</span>
                     </h4>
-                    <p>
-                        どんなに高級な食材であろうとも、その<br>
-                        時々の状態にあわせた、切り方・火の入<br>
-                        れ方ひとつで、味は180°変化します。
-                        食材１つ１つにふさわしく魅力を最大限にアップさせる食べ方を、
-                        オーナー永田のこだわりとともに紹介。
+                    <p class="wrap06-description">
+                        どんなに高級な食材であろうとも、その時々の状態にあわせた、切り方・火の入れ方ひ<br class="mb-dp-none">
+                        とつで、味は180°変化します。食材１つ１つにふさわしく魅力を最大限にアップさせ<br class="mb-dp-none">
+                        る食べ方を、オーナー永田のこだわりとともに紹介。
                     </p>
+                    <figure class="img-wrap06-bg">
+                        <img src="images/img-wrap06-bg.png" alt="野菜たち">
+                    </figure>
+                    <figure class="wrap06-bg">
+                        <img src="images/mb-img-wrap06-bg.png" alt="さんま">
+                    </figure>
                 </section>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -436,9 +458,15 @@
             <!-- wrap07 start -->
             <div class="wrap07">
                 <section>
-                    <h4 class="u-red">食のいろいろな楽しみ方を<br>体験してみてください。</h4>
-                    <div>
-                        <p>
+                    <h4 class="wrap07-title f-size21 u-red">食のいろいろな楽しみ方を<br>体験してみてください。
+                    </h4>
+                    <div class="title-animation-line">
+                        <figure>
+                            <img src="" alt="波線">
+                        </figure>
+                    </div>
+                    <div class="wrap07-description-box padding-75">
+                        <p class="wrap07-description">
                             食材の状態、調理法、調味料。<br>
                             その組み合わせの中には「無限大の可能性」が。
                             「こんな食べ方初めて。」「こんなに美味しかったんだ！」まるで世界が広がるような、
@@ -447,20 +475,22 @@
                         <figure>
                             <img src="images/mb-img-introduce06.png" alt="惣菜">
                         </figure>
+                        <figure class="wrap07-bg">
+                            <img src="images/img-wrap07-bg.png" alt="牡蠣">
+                        </figure>
                     </div>
                 </section>
+                <div class="wrap07-bottom">
+                    <figure class="staff">
+                        <img src="images/img-staff.png" alt="スタッフ">
+                    </figure>
+                    <!-- 擬似要素で後ろに矢印 -->
+                    <div class="menu-box">
+                        <a class="menu f-size18">Menu</a>
+                    </div>
+                </div>
             </div>
             <!-- wrap07 end -->
-
-            <!-- wrap08 start -->
-            <div class="wrap08">
-                <figure>
-                    <img src="images/img-staff.png" alt="スタッフ">
-                </figure>
-                <!-- 擬似要素で後ろに矢印 -->
-                <p>Menu</p>
-            </div>
-            <!-- wrap08 end -->
 
         </main>
         <!-- main end -->
