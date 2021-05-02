@@ -13,11 +13,30 @@ p {
   background-image: url(../images/mb-img-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  z-index: 1;
 }
 
 /* breadcrumb start */
 .breadcrumb {
   padding: 2% 0 0 3%;
+}
+
+.breadcrumb ul li {
+  width: 50px;
+}
+
+.breadcrumb .after::after {
+  content: "＞";
+  margin: 0 5px;
+}
+
+.after a {
+  color: #000;
+}
+
+.after a:visited {
+  color: #000;
 }
 /* breadcrumb end */
 
@@ -29,6 +48,7 @@ p {
   width: 100px;
   top: 10rem;
   left: 0;
+  opacity: 0.5;
 }
 
 .vegetables-icon {
@@ -37,10 +57,20 @@ p {
   right: 0;
 }
 
+.alcohol-icon img,
+.vegetables-icon img {
+  z-index: 2;
+}
+
 /* concept start */
 .concept-title {
   width: 95%;
   margin: 10% auto 0;
+}
+
+.concept-title > img {
+  position: relative;
+  z-index: 3;
 }
 
 .concept-description {
@@ -88,7 +118,8 @@ p {
   position: relative;
   top: -7.5rem;
   margin-bottom: 8%;
-  font-size: 24px;
+  font-size: 2.4rem;
+  z-index: 3;
 }
 
 .introduce-description {
@@ -98,18 +129,18 @@ p {
   line-height: 1.875;
 }
 
-/* .introduce-title::before {
+.introduce-title::before {
   position: absolute;
   content: "";
-  top: -2.1em;
+  top: -70%;
   left: 0;
-  height: 34%;
-  width: 29%;
+  height: 15px;
+  width: 300px;
   background: url(../images/img-title-before-slash.png);
   background-repeat: no-repeat;
-} */
+}
 
-.f-size {
+.f-size40 {
   font-size: 4rem;
 }
 
@@ -123,12 +154,14 @@ p {
   top: -8%;
   left: 45%;
   width: 50%;
+  z-index: 3;
 }
 
 .img-introduce03 {
   position: relative;
   width: 65%;
   margin-left: 7.5%;
+  z-index: 2;
 }
 
 .after-relative::after {
@@ -141,6 +174,8 @@ p {
   width: 50%;
   bottom: 14%;
   right: -7%;
+  z-index: 1;
+  opacity: 0.4;
 }
 
 .img-introduce-bg02 {
@@ -148,6 +183,8 @@ p {
   width: 60%;
   bottom: -5%;
   left: -5%;
+  z-index: 1;
+  opacity: 0.4;
 }
 /* introduce end */
 /* wrap01 end */
@@ -162,12 +199,29 @@ p {
   background-image: url(../images/img-parallax.jpg);
 }
 
+.introduce-title03 {
+  font-size: 2.4rem;
+  margin-top: 15%;
+  margin-bottom: 8%;
+  position: relative;
+}
+
+.introduce-title03::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 0;
+  height: 15px;
+  width: 300px;
+  background: url(../images/img-title-before-slashwhite.png);
+  background-repeat: no-repeat;
+}
+
 .padding-top {
   padding-top: 10%;
 }
-/* transform skew */
 
-.introduce-box03 p {
+.introduce-box03-description {
   font-size: 1.6rem;
   line-height: 1.875;
 }
@@ -191,20 +245,20 @@ p {
   width: 75%;
   margin: 0 auto;
   padding: 5% 0 8%;
+  position: relative;
+  z-index: 2;
 }
 
 .img-wrap03-bg-illust {
   position: absolute;
   bottom: 0;
+  z-index: 1;
+  opacity: 0.5;
 }
 
 /* wrap03 end */
 
 /* wrap04 start */
-.wrap04 {
-  background-color: #2f1e17;
-}
-
 .wrap04-title {
   padding-top: 8%;
   padding-left: 3%;
@@ -217,8 +271,25 @@ p {
   font-size: 2.4rem;
 }
 
-.wrap04-description {
+.wrap04-catch {
+  width: 95%;
+  margin: 8% auto 0;
   color: #fff;
+}
+
+.wrap04-catch p {
+  line-height: 1.5;
+}
+
+.wrap04-description {
+  width: 85%;
+  margin: 5% auto 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.wrap04-description p {
+  line-height: 1.875;
 }
 
 .txt-left {
@@ -239,16 +310,20 @@ p {
 
 .owner-introduce {
   position: relative;
-  padding-top: 20%;
+  padding-top: 12.5%;
   color: #fff;
 }
 
 .owner-catch {
-  width: 190px;
-  margin-left: 10%;
+  width: 250px;
+  margin-left: 20%;
   position: relative;
   display: inline-block;
-  transform: rotate(-8deg);
+  transform: rotate(-5deg);
+}
+
+.owner-catch p {
+  line-height: 1.5;
 }
 
 .owner-catch::before {
@@ -298,18 +373,19 @@ p {
 }
 
 .lamp {
-  width: 85px;
+  width: 125px;
   position: absolute;
-  top: 7%;
-  left: 70%;
+  top: 20%;
+  left: 72.5%;
 }
 /* wrap04 end */
 
 /* wrap05 start */
-.wrap05 {
+.wrap0405 {
   color: #fff;
   background-color: #2f1e17;
   position: relative;
+  z-index: 0;
 }
 
 .owner-comments {
@@ -320,13 +396,22 @@ p {
 .img-introduce05 {
   width: 92.5%;
   padding: 10% 3.75% 20%;
+  position: relative;
+}
+
+.img-introduce05 img {
+  z-index: 2;
 }
 
 .wrap05-bg {
   position: absolute;
   bottom: 0;
+  opacity: 0.5;
 }
 
+.wrap05-bg img {
+  z-index: 1;
+}
 /* wrap05 end */
 
 /* wrap06 start */
@@ -435,6 +520,8 @@ p {
 .wrap07 {
   padding-bottom: 10%;
   background-color: #dcd2a5;
+  position: relative;
+  z-index: 1;
 }
 
 .wrap07-title {
@@ -449,6 +536,7 @@ p {
 
 .wrap07-description-box {
   position: relative;
+  z-index: 0;
 }
 
 .wrap07-description {
@@ -458,11 +546,18 @@ p {
   line-height: 1.875;
 }
 
+.img-introduce06 {
+  position: relative;
+  z-index: 3;
+}
+
 .wrap07-bg {
   position: absolute;
   bottom: 2%;
   left: -12%;
   width: 45%;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .wrap07-bottom {

@@ -22,27 +22,32 @@
   margin: 5% auto;
 }
 
+.f-size16 {
+  font-size: 1.6rem;
+}
+
 .shop-info {
   flex-wrap: wrap;
-  width: 95%;
+  width: 80%;
   margin: 0 auto 3%;
+  padding: 0 20%;
 }
 
 .shop-info dt {
   width: 15%;
   margin-right: 5%;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 .shop-info dd {
   width: 80%;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
-.sns-container {
+/* .sns-container {
   width: 50%;
   margin: 0 auto;
-}
+} */
 
 .instagram-box {
   width: 80px;

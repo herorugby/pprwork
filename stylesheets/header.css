@@ -1,16 +1,24 @@
 @charset "UTF-8";
 
 .drawer-hamburger {
-  padding-top: 18px;
-  padding-right: 18px;
+  margin-top: 18px;
+  margin-right: 18px;
   position: fixed;
+  border: 1.9px solid #fff;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .drawer-hamburger-icon,
 .drawer-hamburger-icon::before,
 .drawer-hamburger-icon::after {
-  height: 3px;
+  height: 2.5px;
   background-color: #fff;
+}
+
+.drawer-hamburger-icon {
+  margin: 3px 0;
 }
 
 .drawer-nav {
@@ -30,6 +38,19 @@
 
 .drawer-menu li {
   margin-top: 5%;
+  line-height: 1.5;
+  position: relative;
+}
+
+.drawer-menu li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 130px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
 }
 
 .drawer-menu a {
@@ -50,7 +71,7 @@ h1 {
 
 .eyecatch-theme {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -60,6 +81,21 @@ h1 {
   right: 0;
   margin: auto; */
   width: 80%;
+}
+
+.icon-tel,
+.icon-reserve {
+  position: fixed;
+}
+
+.icon-tel {
+  bottom: 0;
+  left: 0;
+}
+
+.icon-reserve {
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 768px) {

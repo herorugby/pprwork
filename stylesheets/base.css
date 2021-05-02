@@ -23,21 +23,6 @@ main {
   justify-content: space-between;
 }
 
-.icon-tel,
-.icon-reserve {
-  position: fixed;
-}
-
-.icon-tel {
-  bottom: 0;
-  left: 0;
-}
-
-.icon-reserve {
-  bottom: 0;
-  right: 0;
-}
-
 .u-red {
   color: #a52a2a;
 }
