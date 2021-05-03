@@ -22,41 +22,41 @@
   margin: 5% auto;
 }
 
-.f-size16 {
-  font-size: 1.6rem;
+.f-size14 {
+  font-size: 1.4rem;
 }
 
 .shop-info {
   flex-wrap: wrap;
-  width: 80%;
+  width: 88%;
   margin: 0 auto 3%;
-  padding: 0 20%;
+  /* padding: 0 20%; */
 }
 
 .shop-info dt {
-  width: 15%;
-  margin-right: 5%;
+  width: 20%;
+  margin-right: 3.5%;
   line-height: 3rem;
 }
 
 .shop-info dd {
-  width: 80%;
+  width: 76.5%;
   line-height: 3rem;
 }
 
-/* .sns-container {
-  width: 50%;
-  margin: 0 auto;
-} */
+.sns-container {
+  justify-content: center;
+  align-items: center;
+}
 
 .instagram-box {
-  width: 80px;
-  height: 80px;
+  width: 15%;
+  margin-right: 5%;
 }
 
 .twitter-box {
-  width: 100px;
-  height: 100px;
+  width: 25%;
+  margin-left: 5%;
 }
 
 .footer-copyright {

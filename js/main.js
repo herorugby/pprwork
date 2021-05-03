@@ -38,3 +38,15 @@ $(document).ready(function () {
         $('.more-description').slideToggle(500);
     });
 });
+
+// inview.js
+$(document).ready(function () {
+    $('.fade').on('inview', function (event, isInView) {
+        if (isInView) {
+            $(this).addClass('animate__animated animate__fadeIn');
+            $(this).css('animation-delay', '1s');
+        } else {
+            $(this).css('opacity', 0);
+        }
+    });
+});

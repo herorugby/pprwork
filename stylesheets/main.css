@@ -154,14 +154,19 @@ p {
   top: -8%;
   left: 45%;
   width: 50%;
-  z-index: 3;
+  z-index: 2;
 }
 
 .img-introduce03 {
   position: relative;
   width: 65%;
   margin-left: 7.5%;
-  z-index: 2;
+  z-index: 1;
+}
+
+.introduce-description-box {
+  position: relative;
+  z-index: 5;
 }
 
 .after-relative::after {
@@ -174,7 +179,7 @@ p {
   width: 50%;
   bottom: 14%;
   right: -7%;
-  z-index: 1;
+  z-index: 0;
   opacity: 0.4;
 }
 
@@ -605,6 +610,43 @@ p {
 
 @media screen and (min-width: 768px) {
   /* wrap01 start */
+  .breadcrumb {
+    padding: 0.7% 0 0 8%;
+    font-size: 1.2rem;
+  }
+
+  .breadcrumb ul li {
+    width: 70px;
+  }
+
+  .breadcrumb .after::after {
+    margin: 0 10px;
+  }
+
+  .concept-title {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    width: 10%;
+    /* margin: 10% auto 0; */
+    margin: 0;
+  }
+
+  .concept-title > img {
+    position: relative;
+    z-index: 3;
+  }
+
+  .concept-description {
+    width: 30%;
+    margin: 10% auto 0;
+    font-size: 1.6rem;
+    writing-mode: vertical-rl;
+  }
+
+  .concept-description p {
+    line-height: 1.875;
+  }
   /* wrap01 end */
 
   /* wrap02 start */

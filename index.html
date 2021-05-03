@@ -13,6 +13,9 @@
     <!-- swiper.js css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- css files -->
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/base.css">
@@ -34,11 +37,13 @@
                 <!-- <span class="sr-only">toggle navigation</span> -->
                 <span class="drawer-hamburger-icon"></span>
             </button>
-            <nav id="" class="drawer-nav" role="navigation">
+            <nav class="drawer-nav" role="navigation">
                 <a href="#">
-                    <img src="images/mb-img-tel-nav-01.png" alt="ご予約お問い合わせは072-844-0051">
+                    <figure>
+                        <img src="images/img-tel-nav-01.png" alt="ご予約お問い合わせは072-844-0051">
+                    </figure>
                 </a>
-                <ul class="drawer-menu">
+                <ul class="nav-menu">
                     <li><a href="#">ホーム<br>Home</a></li>
                     <li><a href="#">楽しみ方<br>How to use</a></li>
                     <li><a href="#">お品書き<br>Menu</a></li>
@@ -64,20 +69,20 @@
             <section>
                 <h2 class="eyecatch-icon">
                     <a href="#" class="eyecatch-theme">
-                        <figure>
-                            <img src="images/img-logo-mb.png" alt="火のや温">
-                        </figure>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="images/img-logo.png">
+                            <img src="images/mb-img-logo.png" alt="火のや温">
+                        </picture>
                     </a>
                 </h2>
-                <div>
-                    <div class="mb-dp-none">
-                        <p>ご予約・お問い合わせ</p>
-                        <p>tel.<span>072-844-0051</span></p>
-                    </div>
-                </div>
+                <!-- <div> -->
+                <figure class="reserve-tel mb-dp-none">
+                    <img src="images/img-tel-nav-01.png" alt="ご予約お問い合わせは072-844-0051">
+                </figure>
+                <!-- </div> -->
             </section>
 
-            <div class="flex-container flex-container-sep pc-dp-none">
+            <div class="flex-container pc-dp-none">
                 <a href="#" class="icon-tel">
                     <img src="images/mb-img-tel-01.jpg" alt="お問い合わせはこちらから">
                 </a>
@@ -86,13 +91,13 @@
                 </a>
             </div>
 
-            <div class="mb-dp-none">
-                <p>web予約はこちら</p>
-            </div>
+            <a href="#" class="reserve-web mb-dp-none">
+                <figure>
+                    <img src="images/img-web-reserve.jpg" alt="web予約はこちらから">
+                </figure>
+            </a>
 
-            <nav class="mb-dp-none">
-                <p>ご予約・お問い合わせ</p>
-                <p>tel.<span>072-844-0051</span></p>
+            <nav class="mb-dp-none nav-menu f-size14">
                 <ul>
                     <li><a href="#">ホーム<br>Home</a></li>
                     <li><a href="#">楽しみ方<br>How to use</a></li>
@@ -102,6 +107,27 @@
                     <li><a href="#">求人<br>Recruit</a></li>
                 </ul>
             </nav>
+
+            <!-- スクロールで表示される要素 -->
+            <!-- <div>
+                <a href="#" class="reserve-web mb-dp-none">
+                    <figure>
+                        <img src="images/img-web-reserve.jpg" alt="web予約はこちらから">
+                    </figure>
+                </a>
+
+                <nav class="mb-dp-none nav-menu f-size14">
+                    <ul>
+                        <li><a href="#">ホーム<br>Home</a></li>
+                        <li><a href="#">楽しみ方<br>How to use</a></li>
+                        <li><a href="#">お品書き<br>Menu</a></li>
+                        <li><a href="#">お飲み物<br>Drink</a></li>
+                        <li><a href="#">空間<br>Seat</a></li>
+                        <li><a href="#">求人<br>Recruit</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+
 
         </header>
         <!-- header end -->
@@ -133,7 +159,10 @@
                 <div class="concept">
                     <section>
                         <h4 class="concept-title">
-                            <img src="images/mb-img-concept-01.png" alt="居酒屋の枠を超えて「おいしい」を新体験">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/img-concept.png">
+                                <img src="images/mb-img-concept-01.png" alt="居酒屋の枠を超えて「おいしい」を新体験">
+                            </picture>
                         </h4>
 
                         <div class="concept-description">
@@ -187,10 +216,10 @@
                 </div>
 
                 <div class="introduce-box01">
-                    <figure class="img-introduce01">
+                    <figure class="fade animated img-introduce01">
                         <img src="images/img-introduce01.png" alt="旬と珍味を味わう">
                     </figure>
-                    <div class="absolute-box padding-75">
+                    <div class="fade animated introduce-description-box absolute-box padding-75">
                         <p class="introduce-title"><span class="u-orange f-size40">01</span><span class="f-size40">.</span>旬と珍味を味わう</p>
                         <p class="introduce-description">
                             その時一番の旬の味を楽しむ一皿をご提供。<br class="mb-dp-none">
@@ -202,14 +231,14 @@
 
                 <div class="introduce-box02">
                     <div class="box02-imeges">
-                        <figure class="img-introduce02">
+                        <figure class="fade animated img-introduce02">
                             <img src="images/img-introduce02.png" alt="酒と肴の上質マリアージュ">
                         </figure>
-                        <figure class="img-introduce03">
+                        <figure class="fade animated img-introduce03">
                             <img src="images/img-introduce03.png" alt="酒と肴の上質マリアージュ">
                         </figure>
                     </div>
-                    <div class="absolute-box padding-75">
+                    <div class="fade animated absolute-box introduce-description-box padding-75">
                         <p class="introduce-title"><span class="u-orange f-size40">02</span><span class="f-size40">.</span>酒と肴の<br>上質マリアージュ</p>
                         <p class="introduce-description after-relative">
                             本当に相性のよいお酒と料理は、美味しさに相乗効果をもたらします。
@@ -245,7 +274,7 @@
             <!-- wrap03 start -->
             <div class="wrap03">
                 <section>
-                    <h4 class="mb-img-concept-02">
+                    <h4 class="fade animated mb-img-concept-02">
                         <img src="images/mb-img-concept-02.png" alt="美味しさは一期一会火のや温のこだわり">
                     </h4>
                     <div class="concept-description padding-75">
@@ -271,11 +300,16 @@
                 <!-- wrap04 start -->
                 <div class="wrap04">
                     <section>
-                        <h4 class="u-orange wrap04-title">
+                        <h4 class="fade animated u-orange wrap04-title">
                         最大値<span class="f-size24">を常に</span>アップデート<br>
                         進化<span class="f-size24">するお</span>店<span class="f-size24">づくりを</span>目指<span class="f-size24">して</span>
                     </h4>
-                        <div class="title-underline"></div>
+
+                        <!-- <div class="fade animated title-underline">
+                                                <figure>
+                                                    <img src="" alt="波線">
+                                                </figure>
+                                            </div> -->
                         <div class="wrap04-catch">
                             <p class="txt-left f-size20">
                             「<span class="u-line-red">むずかしいことはしなくていい｡</span>
@@ -306,7 +340,7 @@
                         </div>
                         <div class="flex-container">
                             <figure class="owner-img">
-                                <img src="images/mb-img-owner.jpg" alt="オーナー永田尚人">
+                                <img class="fade animated " src="images/mb-img-owner.jpg" alt="オーナー永田尚人">
                                 <figcaption><span class="f-size20">オーナー兼シェフ</span><br><span class="f-size25">永田 尚人</span></figcaption>
                             </figure>
                             <figure class="lamp">
@@ -338,7 +372,7 @@
             <div class="wrap06">
                 <section class="wrap06-top-block padding-75">
                     <p class="wrap06-catch f-size18">＼食材＋調理をこだわってます！／</p>
-                    <h4 class="wrap06-title f-size35">
+                    <h4 class="fade animated wrap06-title f-size35">
                         <span class="u-orange">異食</span><span class="u-red">の</span><span class="u-orange">未体験</span><span class="u-red">を</span><span class="u-red">楽</span><span class="u-red">しむ</span><br>
                         <span class="u-red">火</span><span class="u-red">のや</span><span class="u-red">温</span><span class="u-red">の</span><br>
                         <span class="u-orange up">う</span><span class="u-orange">ま</span><span class="u-orange up">い</span><span class="u-orange">も</span><span class="u-orange up">ん</span><span class="u-red">講座</span>
@@ -458,9 +492,9 @@
             <!-- wrap07 start -->
             <div class="wrap07">
                 <section>
-                    <h4 class="wrap07-title f-size21 u-red">食のいろいろな楽しみ方を<br>体験してみてください。
+                    <h4 class="fade animated wrap07-title f-size21 u-red">食のいろいろな楽しみ方を<br>体験してみてください。
                     </h4>
-                    <!-- <div class="title-animation-line">
+                    <!-- <div class="fade animated title-animation-line">
                         <figure>
                             <img src="" alt="波線">
                         </figure>
@@ -518,7 +552,7 @@
                 </a>
             </div>
 
-            <dl class="flex-container shop-info f-size16">
+            <dl class="flex-container shop-info f-size14">
                 <dt>店舗名</dt>
                 <dd>炭火創作dining 火のや温</dd>
                 <dt>住所</dt>
@@ -561,8 +595,11 @@
     <!-- swiper.js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- js file -->
-    <script src="main.js"></script>
+    <!-- inview js file -->
+    <script src="js/jquery.inview.min.js"></script>
+
+    <!-- origina js file -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

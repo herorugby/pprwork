@@ -11,16 +11,16 @@ main {
   width: 100%;
 }
 
+/* .fade {
+  animation-delay: 1s;
+} */
+
 .mb-dp-none {
   display: none;
 }
 
 .flex-container {
   display: flex;
-}
-
-.flex-container-sep {
-  justify-content: space-between;
 }
 
 .u-red {
@@ -37,7 +37,7 @@ main {
 .l-footer {
   width: 100%;
   color: #fff;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 }
 
 /* footer end */

@@ -30,19 +30,19 @@
   margin: 20% 15% 0;
 }
 
-.drawer-menu {
+.nav-menu {
   height: 100vh;
   padding: 10% 10%;
   text-align: center;
 }
 
-.drawer-menu li {
+.nav-menu li {
   margin-top: 5%;
   line-height: 1.5;
   position: relative;
 }
 
-.drawer-menu li::before {
+.nav-menu li::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -53,11 +53,11 @@
   background-color: #fff;
 }
 
-.drawer-menu a {
+.nav-menu a {
   color: #fff;
 }
 
-.drawer-menu a:visited {
+.nav-menu a:visited {
   color: #fff;
 }
 
@@ -71,7 +71,7 @@ h1 {
 
 .eyecatch-theme {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -80,26 +80,72 @@ h1 {
   left: 0;
   right: 0;
   margin: auto; */
-  width: 80%;
+  width: 90%;
 }
 
 .icon-tel,
 .icon-reserve {
   position: fixed;
+  z-index: 10;
 }
 
 .icon-tel {
   bottom: 0;
   left: 0;
+  width: 60%;
 }
 
 .icon-reserve {
   bottom: 0;
   right: 0;
+  width: 37%;
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
-    color: #fff;
+  .eyecatch-theme {
+    top: 16%;
+    left: 25%;
+    width: 25%;
+  }
+
+  .reserve-tel {
+    position: absolute;
+    top: 10%;
+    bottom: 90%;
+    right: 12%;
+    width: 20%;
+  }
+
+  .reserve-web {
+    position: absolute;
+    position: fixed;
+    width: 6.5%;
+    bottom: 15%;
+    right: 0;
+    z-index: 10;
+
+    box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+      -8px 14px 14px -1px rgba(0, 0, 0, 0.87);
+  }
+
+  .nav-menu {
+    position: absolute;
+    bottom: 25%;
+    /* left: 13.5%; */
+    left: -8%;
+    width: 50%;
+    height: 30vh;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav-menu li {
+    margin-top: 1.5%;
+    padding-left: 0;
+  }
+
+  .nav-menu li::before {
+    top: 50%;
+    left: 43.5%;
   }
 }
