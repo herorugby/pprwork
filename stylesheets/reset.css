@@ -39,3 +39,7 @@ img {
 a {
   text-decoration: none;
 }
+
+.f-size16 {
+  font-size: 1.6rem;
+}

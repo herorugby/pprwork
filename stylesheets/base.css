@@ -51,7 +51,7 @@ main {
     display: none;
   }
 
-  h1 {
-    color: blue;
+  .pc-flex-container {
+    display: flex;
   }
 }

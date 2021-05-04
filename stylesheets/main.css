@@ -65,21 +65,18 @@ p {
 /* concept start */
 .concept-title {
   width: 95%;
-  margin: 10% auto 0;
+  margin: 10% auto;
 }
 
-.concept-title > img {
+.concept-title img {
   position: relative;
   z-index: 3;
 }
 
-.concept-description {
+.concept-description-rl {
   width: 85%;
-  margin: 10% auto 0;
+  margin: 0 auto;
   font-size: 1.6rem;
-}
-
-.concept-description p {
   line-height: 1.875;
 }
 
@@ -188,7 +185,7 @@ p {
   width: 60%;
   bottom: -5%;
   left: -5%;
-  z-index: 1;
+  z-index: 0;
   opacity: 0.4;
 }
 /* introduce end */
@@ -202,6 +199,12 @@ p {
   background-repeat: no-repeat;
   background-size: 180% auto;
   background-image: url(../images/img-parallax.jpg);
+  position: relative;
+  z-index: 1;
+}
+
+.introduce-box03 {
+  padding-top: 10%;
 }
 
 .introduce-title03 {
@@ -222,10 +225,6 @@ p {
   background-repeat: no-repeat;
 }
 
-.padding-top {
-  padding-top: 10%;
-}
-
 .introduce-box03-description {
   font-size: 1.6rem;
   line-height: 1.875;
@@ -240,10 +239,17 @@ p {
   position: relative;
 }
 
-.mb-img-concept-02 {
+.img-concept-02 {
   width: 95%;
   margin: 0 auto;
   padding-top: 10%;
+}
+
+.wrap03-description {
+  width: 85%;
+  margin: 8% auto 5%;
+  font-size: 1.6rem;
+  line-height: 1.875;
 }
 
 .img-introduce04 {
@@ -257,7 +263,7 @@ p {
 .img-wrap03-bg-illust {
   position: absolute;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
   opacity: 0.5;
 }
 
@@ -291,9 +297,6 @@ p {
   margin: 5% auto 0;
   font-size: 1.6rem;
   color: #fff;
-}
-
-.wrap04-description p {
   line-height: 1.875;
 }
 
@@ -623,33 +626,117 @@ p {
     margin: 0 10px;
   }
 
+  .concept {
+    flex-direction: row-reverse;
+    margin-top: 7%;
+    position: relative;
+  }
+
   .concept-title {
-    position: absolute;
-    top: 5%;
-    right: 15%;
-    width: 10%;
-    /* margin: 10% auto 0; */
+    width: 12.5%;
+    padding: 0 13% 0 5%;
     margin: 0;
   }
 
-  .concept-title > img {
+  .concept-title img {
     position: relative;
     z-index: 3;
   }
 
-  .concept-description {
-    width: 30%;
-    margin: 10% auto 0;
-    font-size: 1.6rem;
+  .concept-description-rl {
+    text-indent: 1em;
     writing-mode: vertical-rl;
+    width: 10%;
+    height: 100%;
+    padding-left: 2%;
+    line-height: 2.25;
+
+    margin: 0;
+    font-size: 1.6rem;
+    /* font-size: 1vw; */
   }
 
-  .concept-description p {
-    line-height: 1.875;
+  .alcohol-icon {
+    width: 50%;
+    top: 12.5%;
+    left: -8.5%;
+    opacity: 0.4;
   }
+
+  .vegetables-icon {
+    width: 45%;
+    top: 42.5%;
+    right: -9%;
+  }
+
+  .introduce-box01 {
+    position: relative;
+    margin: -30% 5% 0 0;
+  }
+
+  .img-introduce01 {
+    width: 60%;
+    margin: 0 auto;
+    /* position: relative; */
+  }
+
+  .pc-control {
+    position: relative;
+    margin: -10% 0 0 10%;
+    /* z-index: 5; */
+  }
+
+  .introduce-title {
+    position: relative;
+    top: -7.5rem;
+    margin-bottom: 2%;
+    font-size: 2.4rem;
+    z-index: 3;
+  }
+
+  .img-introduce02 {
+    /* position: absolute; */
+    top: -8%;
+    left: 50%;
+    width: 20%;
+    z-index: 1;
+  }
+
+  .img-introduce03 {
+    /* position: relative; */
+    width: 32.5%;
+    margin-left: 18%;
+    z-index: 1;
+  }
+
+  .relative-right {
+    position: relative;
+    top: 0;
+    left: 40%;
+    margin: -8% 0 5% 0;
+  }
+
+  .img-introduce-bg02 {
+    position: absolute;
+    width: 35%;
+    bottom: -8%;
+    left: -2%;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
   /* wrap01 end */
 
   /* wrap02 start */
+  /* .wrap02 {
+  color: #fff;
+  min-height: 400px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 180% auto;
+  background-image: url(../images/img-parallax.jpg);
+} */
+
   .wrap02 {
     min-height: 400px;
     background-attachment: fixed;
@@ -657,15 +744,140 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .introduce-box03 {
+    margin-left: 6%;
+    padding-top: 8%;
+  }
+
+  .introduce-title03 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 2%;
+    font-size: 2.4rem;
+  }
+
+  .introduce-title03::before {
+    content: "";
+    position: absolute;
+    top: -90%;
+    left: 0;
+    height: 15px;
+    width: 300px;
+    background: url(../images/img-title-before-slashwhite.png);
+    background-repeat: no-repeat;
+  }
+
+  .introduce-box03-description {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
   /* wrap02 end */
 
   /* wrap03 start */
+  .pc-control-wrap03 {
+    padding: 10% 0 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pc-control-wrap03 section {
+    margin-right: -22.5%;
+  }
+
+  .img-concept-02 {
+    width: 75%;
+    margin: 0;
+    padding-top: 10%;
+    position: relative;
+    z-index: 3;
+  }
+
+  .wrap03-description {
+    width: 100%;
+    margin: 5% 0 0 0;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    position: relative;
+    z-index: 1;
+  }
+
+  .img-introduce04 {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .img-wrap03-bg-illust {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.5;
+  }
   /* wrap03 end */
 
   /* wrap04 start */
+  .wrap04 {
+    flex-direction: row-reverse;
+  }
+
+  .wrap04 section {
+    width: 50%;
+  }
+
+  .wrap04-title {
+    width: 100%;
+    padding: 0;
+  }
+
+  .wrap04-title {
+    /* padding-top: 8%;
+    padding-left: 3%; */
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    line-height: 3.5rem;
+  }
+
+  .wrap04-catch {
+    width: 100%;
+    margin: 0;
+  }
+
+  .wrap04-catch {
+    /* width: 95%; */
+    /* margin: 8% auto 0; */
+    color: #fff;
+  }
+
+  .wrap04-description {
+    text-indent: 1em;
+  }
+
+  /* .owner-img img {
+    background-image: url(../images/img-owner.jpg);
+    background-repeat: no-repeat;
+  } */
   /* wrap04 end */
 
   /* wrap05 start */
+  .owner-comments {
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+
+  .owner-comments {
+    text-indent: 1em;
+  }
+
+  .img-introduce05 {
+    width: 50%;
+    padding: 0;
+    position: relative;
+  }
   /* wrap05 end */
 
   /* wrap06 start */
