@@ -104,31 +104,27 @@
                     <li><a href="#">お品書き<br>Menu</a></li>
                     <li><a href="#">お飲み物<br>Drink</a></li>
                     <li><a href="#">空間<br>Seat</a></li>
-                    <li><a href="#">求人<br>Recruit</a></li>
+                    <li class="target"><a href="#">求人<br>Recruit</a></li>
                 </ul>
             </nav>
 
             <!-- スクロールで表示される要素 -->
-            <!-- <div>
-                <a href="#" class="reserve-web mb-dp-none">
-                    <figure>
-                        <img src="images/img-web-reserve.jpg" alt="web予約はこちらから">
-                    </figure>
-                </a>
-
-                <nav class="mb-dp-none nav-menu f-size14">
-                    <ul>
-                        <li><a href="#">ホーム<br>Home</a></li>
-                        <li><a href="#">楽しみ方<br>How to use</a></li>
-                        <li><a href="#">お品書き<br>Menu</a></li>
-                        <li><a href="#">お飲み物<br>Drink</a></li>
-                        <li><a href="#">空間<br>Seat</a></li>
-                        <li><a href="#">求人<br>Recruit</a></li>
-                    </ul>
-                </nav>
-            </div> -->
-
-
+            <nav class="mb-dp-none pc-scroll-nav">
+                <ul class="flex-container pc-scroll-nav-list">
+                    <li>ホーム<br>Home</li>
+                    <li>楽しみ方<br>How to use</li>
+                    <li>お品書き<br>Menu</li>
+                    <li>お飲み物<br>Drink</li>
+                    <li>空間<br>Seat</li>
+                    <li>求人<br>Recruit</li>
+                    <li class="last-item"><a href="#">
+                            <figure>
+                                <img src="images/img-tel-nav-01.png" alt="予約はこちらから">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <!-- header end -->
 
@@ -301,21 +297,20 @@
                 <!-- wrap04 start -->
                 <div class="wrap04 pc-flex-container">
                     <section>
-                        <h4 class="fade animated u-orange wrap04-title">
-                            最大値<span class="f-size24">を常に</span>アップデート<br>
-                            進化<span class="f-size24">するお</span>店<span class="f-size24">づくりを</span>目指<span class="f-size24">して</span>
-                        </h4>
-
+                        <div class="fade animated u-orange wrap04-title">
+                            <p>最大値<span class="f-size24">を常に</span>アップデート</p>
+                            <p class="txt-right">進化<span class="f-size24">するお</span>店<span class="f-size24">づくりを</span>目指<span class="f-size24">して</span></p>
+                        </div>
                         <!-- <div class="fade animated title-underline">
                                                 <figure>
                                                     <img src="" alt="波線">
                                                 </figure>
                                             </div> -->
                         <div class="wrap04-catch">
-                            <p class="txt-left f-size20">
+                            <p class="txt-left">
                                 「<span class="u-line-red">むずかしいことはしなくていい｡</span>
                             </p>
-                            <p class="txt-right f-size20">
+                            <p class="txt-right">
                                 <span class="u-line-red">今日の出会いとどう向き合うか｡</span>」
                             </p>
                         </div>
@@ -332,17 +327,16 @@
                     <div class="owner-introduce">
                         <div class="owner-catch">
                             <p class="txt-left">
-                                <span class="u-orange f-size21">365</span>日<span class="u-orange f-size21">24</span>時間、
-                            </p>
-                            <p class="txt-right">
-                                おいしいを研究！
-                            </p>
+                                <span class="u-orange f-size21">365</span>日<span class="u-orange f-size21">24</span>時間、</p>
+                            <p class="txt-right">おいしいを研究！</p>
                         </div>
-                        <div class="flex-container">
-                            <figure class="owner-img">
-                                <img class="fade animated" src="images/mb-img-owner.jpg" alt="オーナー永田尚人">
-                                <figcaption><span class="f-size20">オーナー兼シェフ</span><br><span class="f-size25">永田 尚人</span></figcaption>
-                            </figure>
+                        <picture class="fade animated owner-img">
+                            <source media="(min-width: 768px)" srcset="images/img-owner.jpg">
+                            <img src="images/mb-img-owner.jpg" alt="オーナー永田尚人">
+                        </picture>
+                        <div class="caption">
+                            <p class="owner-position">オーナー兼シェフ</p>
+                            <p class="owner-name">永田 尚人</p>
                         </div>
                     </div>
                 </div>
@@ -364,42 +358,45 @@
                         <img src="images/img-introduce05.png" alt="食材">
                     </figure>
                 </div>
-                <figure class="wrap05-bg">
+                <picture class="wrap05-bg">
+                    <source media="(min-width: 768px)" srcset="images/img-wrap05-bg01.png">
                     <img src="images/mb-img-wrap05-bg.png" alt="包丁と座席">
+                </picture>
+                <figure class="wrap05-bg-pc mb-dp-none">
+                    <img src="images/img-wrap05-bg02.png" alt="包丁と座席">
                 </figure>
                 <!-- wrap05 end -->
             </div>
 
             <!-- wrap06 start -->
             <div class="wrap06">
-                <section class="wrap06-top-block padding-75">
+                <div class="wrap06-top-block padding-75">
                     <p class="wrap06-catch f-size18">＼食材＋調理をこだわってます！／</p>
-                    <h4 class="fade animated wrap06-title f-size35">
-                        <span class="u-orange">異食</span><span class="u-red">の</span><span class="u-orange">未体験</span><span class="u-red">を</span><span class="u-red">楽</span><span class="u-red">しむ</span><br>
-                        <span class="u-red">火</span><span class="u-red">のや</span><span class="u-red">温</span><span class="u-red">の</span><br>
-                        <span class="u-orange up">う</span><span class="u-orange">ま</span><span class="u-orange up">い</span><span class="u-orange">も</span><span class="u-orange up">ん</span><span class="u-red">講座</span>
-                    </h4>
+                    <p class="fade animated wrap06-title f-size35">
+                        <span class="u-orange">異食</span><span class="u-red">の</span><span class="u-orange">未体験</span><span class="u-red">を</span><span class="u-red">楽</span><span class="u-red">しむ</span><br><span class="u-red">火</span><span class="u-red">のや</span><span class="u-red">温</span><span class="u-red">の</span><br class="pc-dp-none"><span class="u-orange up">う</span><span class="u-orange">ま</span><span class="u-orange up">い</span><span class="u-orange">も</span><span class="u-orange up">ん</span><span class="u-red">講座</span>
+                    </p>
                     <p class="wrap06-description">
                         どんなに高級な食材であろうとも、その時々の状態にあわせた、切り方・火の入れ方ひ<br class="mb-dp-none">
                         とつで、味は180°変化します。食材１つ１つにふさわしく魅力を最大限にアップさせ<br class="mb-dp-none">
                         る食べ方を、オーナー永田のこだわりとともに紹介。
                     </p>
-                    <figure class="img-wrap06-bg">
+                    <figure class="wrap06-bg01">
                         <img src="images/img-wrap06-bg.png" alt="野菜たち">
                     </figure>
-                    <figure class="wrap06-bg">
+                    <figure class="wrap06-bg02">
                         <img src="images/mb-img-wrap06-bg.png" alt="さんま">
                     </figure>
-                </section>
+                </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="contents-title">
-                                <figure>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/swiper/img-swiper-title01.png">
                                     <img src="images/swiper/mb-img-swiper-title01.png" alt="きのこの話">
-                                </figure>
+                                </picture>
                             </div>
-                            <div class="contents">
+                            <div class="contents pc-flex-container">
                                 <p>
                                     例えば、きのこ。<br>
                                     <span class="u-red">アミノ酸の種類が豊富</span>
@@ -416,11 +413,12 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="contents-title">
-                                <figure>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/swiper/img-swiper-title02.png">
                                     <img src="images/swiper/mb-img-swiper-title02.png" alt="なすの話">
-                                </figure>
+                                </picture>
                             </div>
-                            <div class="contents">
+                            <div class="contents pc-flex-container">
                                 <p>
                                     例えば、なす<br>
                                     その日のなすが果肉がしっかり詰まったものなら、<span class="u-red">ジューシー感</span>
@@ -439,11 +437,12 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="contents-title">
-                                <figure>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/swiper/img-swiper-title03.png">
                                     <img src="images/swiper/mb-img-swiper-title03.png" alt="ホルモンの話">
-                                </figure>
+                                </picture>
                             </div>
-                            <div class="contents">
+                            <div class="contents pc-flex-container">
                                 <p>
                                     ホルモンを刺身で食べたことはありますか？<br>
                                     <span class="u-red">本当に状態の良い肉は焼かずともそのままで</span>味わうことができます。
@@ -461,11 +460,12 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="contents-title">
-                                <figure>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/swiper/img-swiper-title04.png">
                                     <img src="images/swiper/mb-img-swiper-title04.png" alt="海鮮の話">
-                                </figure>
+                                </picture>
                             </div>
-                            <div class="contents">
+                            <div class="contents pc-flex-container">
                                 <p>
                                     鮮魚は全国で唯一全漁法が許されている高知県の<span>宿毛港</span>から仕入れ。
                                     単にお刺身にするのではなく<span class="u-red">＋１で魚の特徴を生かす工夫</span>
@@ -493,29 +493,34 @@
 
             <!-- wrap07 start -->
             <div class="wrap07">
-                <section>
-                    <h4 class="fade animated wrap07-title f-size21 u-red">食のいろいろな楽しみ方を<br>体験してみてください。
-                    </h4>
-                    <!-- <div class="fade animated title-animation-line">
+                <div class="wrap07-pc pc-flex-container">
+                    <div class="wrap07-description-box">
+                        <div class="fade animated wrap07-title-box f-size21 u-red">
+                            <p>食のいろいろな楽しみ方を<br>体験してみてください。</p>
+                        </div>
+                        <!-- <div class="fade animated title-animation-line">
                         <figure>
                             <img src="" alt="波線">
                         </figure>
                     </div> -->
-                    <div class="wrap07-description-box padding-75">
-                        <p class="wrap07-description">
-                            食材の状態、調理法、調味料。<br>
-                            その組み合わせの中には「無限大の可能性」が。
-                            「こんな食べ方初めて。」「こんなに美味しかったんだ！」まるで世界が広がるような、
-                            食の楽しみ方や新たな切り口・発見・感動をぜひ体感してみてください。
-                        </p>
-                        <figure class="img-introduce06">
-                            <img src="images/mb-img-introduce06.png" alt="惣菜">
-                        </figure>
-                        <figure class="wrap07-bg">
-                            <img src="images/img-wrap07-bg.png" alt="牡蠣">
-                        </figure>
+                        <div class="wrap07-description padding-75">
+                            <p>
+                                食材の状態、調理法、調味料。<br>
+                                その組み合わせの中には「無限大の可能性」が。「こんな食べ方初めて。」「こんなに美味しかったんだ！」まるで世界が広がるような、食の楽しみ方や新たな切り口・発見・感動をぜひ体感してみてください。
+                            </p>
+                        </div>
                     </div>
-                </section>
+                    <picture class="img-introduce06">
+                        <source media="(min-width: 768px)" srcset="images/img-introduce06.png">
+                        <img src="images/mb-img-introduce06.png" alt="惣菜">
+                    </picture>
+                </div>
+
+                <figure class="wrap07-bg">
+                    <source media="(min-width: 768px)" srcset="images/img-wrap07-bg.png">
+                    <img src="images/mb-img-wrap07-bg.png" alt="牡蠣">
+                </figure>
+
                 <div class="wrap07-bottom">
                     <figure class="staff">
                         <img src="images/img-staff.png" alt="スタッフ">
@@ -536,8 +541,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.5748307886574!2d135.64565961553862!3d34.81663708450734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011c44e382ae5d%3A0xff5fb36b345c674c!2z54Gr44Gu44KEIOa4qQ!5e0!3m2!1sja!2sjp!4v1619593563186!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
-            <nav class="mb-dp-none">
-                <ul>
+            <nav class="mb-dp-none footer-nav">
+                <ul class="flex-container footer-nav-list">
                     <li>ホーム<br>Home</li>
                     <li>楽しみ方<br>How to use</li>
                     <li>お品書き<br>Menu</li>
@@ -548,9 +553,10 @@
             </nav>
             <div class="footer-logo">
                 <a href="#">
-                    <figure>
-                        <img src="images/img-logo-mb.png" alt="火のや温">
-                    </figure>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/img-logo.png">
+                        <img src="images/mb-img-logo.png" alt="火のや温">
+                    </picture>
                 </a>
             </div>
 

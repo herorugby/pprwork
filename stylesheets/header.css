@@ -148,4 +148,59 @@ h1 {
     top: 50%;
     left: 43.5%;
   }
+
+  /* koko */
+  .pc-scroll-nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    color: #fff;
+    background-color: #3e322a;
+    opacity: 0.9;
+    z-index: 10;
+  }
+
+  .pc-scroll-nav-list {
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+  }
+
+  .pc-scroll-nav-list li {
+    width: 10%;
+    line-height: 2;
+    text-align: center;
+    position: relative;
+  }
+
+  .pc-scroll-nav-list li:nth-of-type(-n + 6)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+  }
+
+  .pc-scroll-nav-list li:nth-last-child(2) {
+    margin-right: 20%;
+  }
+
+  .pc-scroll-nav-list li:nth-last-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+  }
+
+  .pc-scroll-nav-list li:nth-last-child::before {
+    content: "";
+  }
 }

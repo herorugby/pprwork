@@ -54,4 +54,8 @@ main {
   .pc-flex-container {
     display: flex;
   }
+
+  .l-footer {
+    padding-bottom: 0;
+  }
 }

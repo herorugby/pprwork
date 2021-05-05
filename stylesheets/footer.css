@@ -64,4 +64,114 @@
 }
 
 @media screen and (min-width: 768px) {
+  .l-footer {
+    position: relative;
+  }
+
+  .map {
+    position: relative;
+    padding-top: 30%;
+  }
+
+  .map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-nav {
+    width: 60%;
+    margin: 3% auto 0;
+  }
+
+  .footer-nav-list {
+    justify-content: center;
+  }
+
+  .footer-nav-list li {
+    width: 13.333%;
+    text-align: center;
+    position: relative;
+  }
+
+  .footer-nav-list li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+  }
+
+  .footer-nav-list li:last-child::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+  }
+
+  .footer-logo {
+    width: 20%;
+    margin: 3% auto 2%;
+  }
+
+  .f-size14 {
+    font-size: 1.4rem;
+  }
+
+  .shop-info {
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
+    padding-left: 10%;
+  }
+
+  .shop-info dt {
+    width: 10%;
+    margin-right: 2%;
+    line-height: 3rem;
+  }
+
+  .shop-info dd {
+    width: 88%;
+    line-height: 3rem;
+  }
+
+  .sns-container {
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+  }
+
+  .instagram-box {
+    width: 30%;
+    margin-right: 15%;
+  }
+
+  .instagram-box img {
+    width: 100%;
+  }
+
+  .twitter-box {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .twitter-box img {
+    width: 100%;
+  }
+
+  .footer-copyright {
+    position: relative;
+    padding: 3% 0;
+  }
 }

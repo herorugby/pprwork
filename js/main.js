@@ -21,6 +21,20 @@ let swiper = new Swiper('.swiper-container', {
     },
 });
 
+// pc-nav-scrol
+let scrollNav = $('.pc-scroll-nav');
+let target = $('.target');
+$(function () {
+    scrollNav.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) {
+            scrollNav.fadeIn(500);
+        } else {
+            scrollNav.fadeOut(500);
+        }
+    });
+});
+
 // more description
 $(document).ready(function () {
     $('.more').show();
