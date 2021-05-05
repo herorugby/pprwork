@@ -22,18 +22,44 @@ let swiper = new Swiper('.swiper-container', {
 });
 
 // pc-nav-scrol
-let scrollNav = $('.pc-scroll-nav');
-let target = $('.target');
-$(function () {
-    scrollNav.hide();
-    $(window).scroll(function () {
+scroll();
+$(window).on('load resize', function () {
+    scroll();
+});
+
+function scroll() {
+    let windowW = $(window).width();
+    let scrollNav = $('.pc-scroll-nav');
+    if (windowW >= 768) {
+        scrollNav.hide();
+        $(window).scroll(function () {
         if ($(this).scrollTop() > 250) {
             scrollNav.fadeIn(500);
         } else {
             scrollNav.fadeOut(500);
         }
     });
-});
+    }
+}
+
+// $(window).on('load resize', function () {
+//     let scrollNav = $('.pc-scroll-nav');
+//     if (window.matchMedia('(min-width: 768px)').matches) {
+//     $(function () {
+//     scrollNav.hide();
+//     $(window).scroll(function () {
+//         if ($(this).scrollTop() > 250) {
+//             scrollNav.fadeIn(500);
+//         } else {
+//             scrollNav.fadeOut(500);
+//         }
+//     });
+// });
+// }
+// });
+
+
+
 
 // more description
 $(document).ready(function () {
